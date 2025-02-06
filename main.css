@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    max-height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: left;
+    padding: 50px;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    color: black;
+    display: flex;
+    gap: 20px;
+    height: 400px;
+}
+
+.content-text {
+    flex: 1;
+    
+}
+span {
+    color: #3564c9;
+      font-size: 30px;
+}
+
+.content-text h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.content-text h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.content-text p {
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.carousel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    opacity: 0;
+    position: absolute;
+    animation: slide 9s infinite;
+}
+
+.carousel img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.carousel img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes slide {
+    0% { opacity: 0; transform: translateX(-100px); }
+    33% { opacity: 1; transform: translateX(0); }
+    66% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0; transform: translateX(100px); }
+}
+.about-section {
+    color: rgb(0, 0, 0);
+    padding: 50px 20px;
+}
+
+.about-content {
+    background: rgba(226, 226, 226, 0.9);
+    padding: 0%;
+    border-radius: 15px;
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.about-carousel img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.about-carousel img:hover {
+    transform: scale(1.1);
+}
+
+.about-slide {
+    display: none;
+    text-align: center;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slide-caption {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.slide-description {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+#home {
+    background: url("web\ design.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+#about {
+    background: url("page 2.jpg") no-repeat center center;
+    background-size: cover;
+    
+
+}
+#portfolio {
+    background: url("web\ design.jpg") no-repeat center center;
+    background-size: cover;
+}
+#contact {
+    background: url("page 2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.Mywork{
+    width: 100%;
+    
+    padding: 50px 0;
+}
+h2 {
+    color: #000000;
+}
+.work-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.work-section div { /* Targeting child elements inside .work-section */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.work-section div:hover {
+    transform: translateY(-5px); /* Moves the element 5px up */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds a slight shadow effect */
+}
+
+.card {
+    background: rgb(155, 188, 201);
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+}
+.card h3 {
+    margin: 0;
+}
+.card p {
+    font-size: 14px;
+    color: #000000;
+}
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #2e68e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background: #c92a2a;
+}
+.contact-section {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons img {
+    width: 40px;
+    margin: 5px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: rgb(126, 160, 223);
+}
+.contact-info{
+    background-color: rgb(126, 160, 223);
+    color: black;
+}
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.contact-form input, .contact-form textarea {
+    margin: 5px;
+    padding: 10px;
+    width: 250px;
+}
+.contact-form button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background: #267aaa;
+}
+
+.contact-form:hover {
+    background-color: rgb(130, 205, 235);
+    color: rgb(0, 0, 0);
+    transition: all ease-in-out 1s;
+}
+
+.contact-info:hover {
+    background-color: rgb(130, 205, 235);
+    color: rgb(0, 0, 0);
+    transition: all ease-in-out 1s;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: black;
+}

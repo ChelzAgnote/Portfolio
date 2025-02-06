@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelz's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="ck.gif" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">My Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="home">
+    <div class="container">
+        <div class="content-box">
+            <div class="content-text">
+                <h1>Hi, I'm <span>Chelz!</span></h1>
+                <h2>Future <span>Full-Stack Web Developer</span></h2>
+                <p>Welcome to my Website!</p>
+                <p>I am a First-year IT Student at San Sebastian Recoletos De Cavite</p>
+            </div>
+            <div class="carousel">
+                <img src="standup.jpg" alt="Chelz's Photo">
+                <img src="standup2.jpg" alt="Image 1">
+                <img src="stand4.jpg" alt="Image 2">
+                <img src="standup3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="about-section">
+        <div class="about-content">
+            <h2>About Me</h2>
+            
+            <h4>Click the Icons to learn more about me!</h4>
+            <br>
+            <div class="category-carousel" id="personal-info">
+                <h3>Personal Info</h3>
+                <div class="about-carousel">
+                    <button onclick="prevSlide('personalInfo')">&#9665;</button>
+                    <img id="personalInfo-image" src="suit1.jpg" alt="Personal Info">
+                    <button onclick="nextSlide('personalInfo')">&#9655;</button>
+                </div>
+                <div id="personalInfo-caption" class="slide-caption">GET TO KNOW ME!</div>
+                <div id="personalInfo-description" class="slide-description">Click the Icons!</div>
+            </div>
+            <br>
+            <div class="category-carousel" id="education">
+                <h3>Education</h3>
+                <div class="about-carousel">
+                    <button onclick="prevSlide('education')">&#9665;</button>
+                    <img id="education-image" src="grad.jpg" alt="Education">
+                    <button onclick="nextSlide('education')">&#9655;</button>
+                </div>
+                <div id="education-caption" class="slide-caption">GET TO KNOW MY EDUCATIONAL BACKGROUND!</div>
+                <div id="education-description" class="slide-description">Click the Icons!</div>
+            </div>
+            <br>
+            <div class="category-carousel" id="skills">
+                <h3>Skills</h3>
+                <div class="about-carousel">
+                    <button onclick="prevSlide('skills')">&#9665;</button>
+                    <img id="skills-image" src="code.jpg" alt="Skills">
+                    <button onclick="nextSlide('skills')">&#9655;</button>
+                </div>
+                <div id="skills-caption" class="slide-caption">My skills as a developer!</div>
+                <div id="skills-description" class="slide-description">Click the Icons!</div>
+            </div>
+            <br>
+            <div class="category-carousel" id="hobbies">
+                <h3>Hobbies and Interests</h3>
+                <div class="about-carousel">
+                    <button onclick="prevSlide('hobbies')">&#9665;</button>
+                    <img id="hobbies-image" src="noy.jpg" alt="Hobbies and Interests">
+                    <button onclick="nextSlide('hobbies')">&#9655;</button>
+                </div>
+                <div id="hobbies-caption" class="slide-caption">GET TO KNOW MY HOBBIES AND INTERESTS!</div>
+                <div id="hobbies-description" class="slide-description">Click the Icons!</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Mywork" id="portfolio">
+    <h2>My Work</h2>
+    <div class="work-section">
+        <div class="card">
+            <img src="Screenshot 2025-02-06 143337.png" alt="Project 1">
+            <div class="card-content">
+                <h3>Midterm Project</h3>
+                <p>This Project honed my skills on using Java!</p>
+                <a href="https://docs.google.com/document/u/0/d/1oWgpDzYJVc847Fu3lEB6nED-USrDUJAS/edit?usp=docs_home&ths=true&rtpof=true" class="button"> More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="machine.jpg" alt="Project 2">
+            <div class="card-content">
+                <h3>Prototype Experience</h3>
+                <p>This project improved my Collaborative Skill and Creativity</p>
+                <a href="https://drive.google.com/file/d/1jFSMFwHBv2sk13V7yZ6OFsGU8of73kdb/view?ths=true" class="button"> More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Screenshot 2025-01-10 234954.png" alt="Project 3">
+            <div class="card-content">
+                <h3>Profile Webpage</h3>
+                <p>This project helped me improved my Web development skills!</p>
+                <a href="https://docs.google.com/document/d/1ECsCFrYD8VxvhfTJbfhK8bCxDm65JTfR/edit" class="button"> More</a>
+            </div>
+        </div>
+</section>
+<section id="contact">
+    <div class="contact-section" style="background-image: url('contact-bg.png'); background-size: cover; background-position: center;">
+        <h2>Contact Me!</h2>
+        <p>Reach out to me through my socials!</p>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:s.chelzkyzlee.agnote@sscr.edu">s.chelzkyzlee.agnote@sscr.edu</a></p>
+                <p><strong>Phone:</strong> 034 - 0980</p>
+                <p><strong>My Address:</strong> Cavite City</p>
+                <p><strong>My Socials:</strong></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/chelz.agnote"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/luv_zyk/"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://github.com/ChelzAgnote"><img src="github.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="POST" name="submit-to-google-sheet">
+                <h3>Send a Message!</h3>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email">
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" placeholder="Enter Feedback"></textarea>
+                <button type="submit">Submit</button>
+                
+              
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script>const scriptURL = 'https://script.google.com/macros/s/AKfycbzjdDiK9bMkbx3L6tLHZ6xRagHpzt8C3-3yTM2sXMZQxcb4X7k2qcK5dSdMhcuLCpCE/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 1000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
